@@ -1,0 +1,301 @@
+/* Base styles for body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.page-1 {
+  background-image: url('page1bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 72px;
+  margin: 0;
+  font-weight: bold;
+}
+
+p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.about-us {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.about-us h2:last-of-type {
+  margin-top: 50px;
+  font-size: 36px;
+}
+
+/* Team member styling */
+.team-member {
+  text-align: center;
+  margin-top: 20px;
+  width: 200px; /* Ensure the content is centered within this width */
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333;
+  margin: 0 auto; /* Center the image */
+}
+
+.member-info h3 {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.member-info p {
+  font-size: 18px;
+  color: #777;
+  margin: 0;
+}
+
+/* Layout for Captain and Vice Captain */
+.team-member {
+  margin: 20px;
+}
+
+/* Horizontal layout for additional team members */
+.team-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between profiles */
+  margin-top: 40px;
+}
+
+.mission-page {
+  background-image: url('page3bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+.mission-content {
+  background-color: transparent; /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block; /* Center the content */
+}
+
+.mission-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.mission-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.mission-content p strong {
+  font-weight: bold;
+}
+
+.journey-page {
+  background-image: url('page4bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+.journey-content {
+  background-color: transparent; /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block; /* Center the content */
+}
+
+.journey-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.journey-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Additional Content Styling */
+.additional-content {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.additional-content p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .page-1 h1 {
+    font-size: 48px;
+  }
+
+  .page-1 p {
+    font-size: 18px;
+  }
+
+  .about-us h2 {
+    font-size: 36px;
+  }
+
+  .about-us p {
+    font-size: 16px;
+  }
+
+  .team-member {
+    width: 150px; /* Adjust width for smaller screens */
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .member-info h3 {
+    font-size: 20px;
+  }
+
+  .member-info p {
+    font-size: 16px;
+  }
+
+  .team-horizontal {
+    flex-direction: column; /* Stack team members vertically on small screens */
+  }
+
+  .mission-content {
+    padding: 15px;
+  }
+
+  .mission-content h2 {
+    font-size: 36px;
+  }
+
+  .mission-content p {
+    font-size: 16px;
+  }
+
+  .journey-content {
+    padding: 15px;
+  }
+
+  .journey-content h2 {
+    font-size: 36px;
+  }
+
+  .journey-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-1 h1 {
+    font-size: 36px;
+  }
+
+  .page-1 p {
+    font-size: 16px;
+  }
+
+  .about-us h2 {
+    font-size: 30px;
+  }
+
+  .about-us p {
+    font-size: 14px;
+  }
+
+  .team-member {
+    width: 120px;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .member-info h3 {
+    font-size: 18px;
+  }
+
+  .member-info p {
+    font-size: 14px;
+  }
+
+  .mission-content {
+    padding: 10px;
+  }
+
+  .mission-content h2 {
+    font-size: 30px;
+  }
+
+  .mission-content p {
+    font-size: 14px;
+  }
+
+  .journey-content {
+    padding: 10px;
+  }
+
+  .journey-content h2 {
+    font-size: 30px;
+  }
+
+  .journey-content p {
+    font-size: 14px;
+  }
+}
